@@ -2,7 +2,7 @@
   "name": "electron-template",
   "version": "1.0.0",
   "description": "Simple Electron template with a menu and creation of a new window",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "electron": "electron ."
   },
