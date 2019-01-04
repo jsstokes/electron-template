@@ -24,6 +24,9 @@ const mainMenuTemplate = [
     }
 ];
 
+/*
+ * Compensate for MACOS menu behavior
+ */
 if (process.platform === 'darwin') {
-    mainMenuTemplate.unshift({label: 'Empyt'});
+    mainMenuTemplate.unshift({label: 'Empty'});
 }
