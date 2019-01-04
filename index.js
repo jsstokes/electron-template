@@ -9,6 +9,7 @@ app.on('ready', ({}) => {
     mainWindow.loadURL(`file://${__dirname}/mainWindow.html`);
     const mainMenu = Menu.buildFromTemplate(mainMenuTemplate);
     Menu.setApplicationMenu(mainMenu);
+    // mainWindow.webContents.toggleDevTools();
 });
 
 const mainMenuTemplate = [
@@ -29,4 +30,22 @@ const mainMenuTemplate = [
  */
 if (process.platform === 'darwin') {
     mainMenuTemplate.unshift({label: 'Empty'});
+}
+
+/*
+ * Add developer tools in test env
+ */
+if (process.env.NODE_ENV !== 'production') {
+    mainMenuTemplate.push({
+        label: 'View',
+        submenu: [
+            {
+                label: 'Toggle Dev Tools',
+                accelerator: process.platform === 'darwin' ? 'Command+Alt+I': "Ctrl+Alt+I",
+                click(item, focusedWindow) {
+                    focusedWindow.webContents.toggleDevTools();
+                }
+            }
+        ]
+    });
 }
