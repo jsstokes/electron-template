@@ -37,7 +37,7 @@ if (process.platform === 'darwin') {
  */
 if (process.env.NODE_ENV !== 'production') {
     mainMenuTemplate.push({
-        label: 'View',
+        label: 'Developer',
         submenu: [
             {
                 label: 'Toggle Dev Tools',

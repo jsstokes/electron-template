@@ -1,4 +1,18 @@
-<head></head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
 <body>
     <h1>This is the default Main window window</h1>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script>
+        // Had to load in this manner given the issue
+        // at https://github.com/electron/electron/issues/254
+        window.$ = window.jQuery = require(`${__dirname}/node_modules/jquery/dist/jquery.min.js`);
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
