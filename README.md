@@ -1,4 +1,4 @@
-# Electron TemplateBasic Template for trying various JET approaches
+# Electron Template
 Simple Electron template with menu and accelerator added to Quit the application.
 
 ## Basic Structure
