@@ -1,0 +1,14 @@
+{
+  "name": "electron-template",
+  "version": "1.0.0",
+  "description": "Simple Electron template with a menu and creation of a new window",
+  "main": "main.js",
+  "scripts": {
+    "electron": "electron ."
+  },
+  "author": "Scott Stokes",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^4.0.0"
+  }
+}
