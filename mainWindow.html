@@ -335,20 +335,22 @@
             const {ipcRenderer} = electron;
     
             $(document).ready(() => { 
-                console.log("Document is ready!!!");
-                // console.log(`Current Directory is: ${__dirname}`);
+                // Get a link to the target list
+                const target = document.getElementById("targetList");
+
+                // Create a link and set all the required attributes
                 const anchor = document.createElement("a");
                 anchor.className = "list-group-item";
                 anchor.onclick = function () { showItem(this.id); return false; };
                 anchor.href = "#";
                 anchor.id = "myAnchorID";
+
+                // Need a heading for this item
                 const hdr = document.createElement("h4");
                 hdr.className = "list-group-item-heading";
                 const hdrText = document.createTextNode("This is from doc ready");
                 hdr.appendChild(hdrText);
                 anchor.appendChild(hdr);
-                // const target = $("#targetList");
-                const target = document.getElementById("targetList");
                 target.appendChild(anchor);
 
                 // <a href="#" onclick="showItem('from target list')"class="list-group-item">
