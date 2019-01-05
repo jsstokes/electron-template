@@ -3,10 +3,325 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="../node_modules/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>This is the default Main window window</h1>
 
+<body>
+    <div class="container theme-showcase" role="main">
+        <div class="jumbotron">
+            <h1>Main Window</h1>
+            <p>This should be changed for your application</p>
+        </div>
+        <div class="page-header">
+            <h1>List groups</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <ul class="list-group">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+            </div><!-- /.col-sm-4 -->
+            <div class="col-sm-4">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">
+                        Cras justo odio
+                    </a>
+                    <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                    <a href="#" class="list-group-item">Morbi leo risus</a>
+                    <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                    <a href="#" class="list-group-item">Vestibulum at eros</a>
+                </div>
+            </div><!-- /.col-sm-4 -->
+            <div class="col-sm-4">
+                <div class="list-group">
+                    <a href="#" onclick="showItem('item1'); return false;" class="list-group-item active">
+                        <h4 class="list-group-item-heading">List group item heading</h4>
+                        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed
+                            diam eget risus varius blandit.</p>
+                    </a>
+                    <a href="#" onclick="showItem('item  2'); return false;" class="list-group-item">
+                        <h4 class="list-group-item-heading">List group item heading for alert</h4>
+                        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed
+                            diam eget risus varius blandit.</p>
+                    </a>
+                    <a href="#" onclick="showItem('item3')"class="list-group-item">
+                        <h4 class="list-group-item-heading">List group item heading</h4>
+                        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed
+                            diam eget risus varius blandit.</p>
+                    </a>
+                </div>
+            </div><!-- /.col-sm-4 -->
+            <div class="col-sm-4">
+                <div class="list-group" id="targetList">
+                    <a href="#" onclick="showItem('from target list')"class="list-group-item">
+                            <h4 class="list-group-item-heading">List group item heading</h4>
+                            <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed
+                                diam eget risus varius blandit.</p>
+                        </a>
+
+                </div>
+
+            </div>
+        </div>
+        <HR>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+            </div><!-- /.col-sm-4 -->
+            <div class="col-sm-4">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+            </div><!-- /.col-sm-4 -->
+            <div class="col-sm-4">
+                <div class="panel panel-warning">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+            </div><!-- /.col-sm-4 -->
+        </div>
+        <div class="page-header">
+            <h1>Buttons</h1>
+        </div>
+        <p>
+            <button type="button" class="btn btn-lg btn-default">Default</button>
+            <button type="button" class="btn btn-lg btn-primary">Primary</button>
+            <button type="button" class="btn btn-lg btn-success">Success</button>
+            <button type="button" class="btn btn-lg btn-info">Info</button>
+            <button type="button" class="btn btn-lg btn-warning">Warning</button>
+            <button type="button" class="btn btn-lg btn-danger">Danger</button>
+            <button type="button" class="btn btn-lg btn-link">Link</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-default">Default</button>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-link">Link</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-sm btn-default">Default</button>
+            <button type="button" class="btn btn-sm btn-primary">Primary</button>
+            <button type="button" class="btn btn-sm btn-success">Success</button>
+            <button type="button" class="btn btn-sm btn-info">Info</button>
+            <button type="button" class="btn btn-sm btn-warning">Warning</button>
+            <button type="button" class="btn btn-sm btn-danger">Danger</button>
+            <button type="button" class="btn btn-sm btn-link">Link</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-xs btn-default">Default</button>
+            <button type="button" class="btn btn-xs btn-primary">Primary</button>
+            <button type="button" class="btn btn-xs btn-success">Success</button>
+            <button type="button" class="btn btn-xs btn-info">Info</button>
+            <button type="button" class="btn btn-xs btn-warning">Warning</button>
+            <button type="button" class="btn btn-xs btn-danger">Danger</button>
+            <button type="button" class="btn btn-xs btn-link">Link</button>
+        </p>
+        <div class="page-header">
+            <h1>Tables</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@TwBootstrap</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <table class="table table-condensed">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="page-header">
+            <h1>Alerts</h1>
+        </div>
+        <div class="alert alert-success" role="alert">
+            <strong>Well done!</strong> You successfully read this important alert message.
+        </div>
+        <div class="alert alert-info" role="alert">
+            <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+        </div>
+        <div class="alert alert-warning" role="alert">
+            <strong>Warning!</strong> Best check yo self, you're not looking too good.
+        </div>
+        <div class="alert alert-danger" role="alert">
+            <strong>Oh snap!</strong> Change a few things up and try submitting again.
+        </div>
+
+
+
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script>
         // Had to load in this manner given the issue
@@ -15,4 +330,39 @@
     </script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
+    <script>
+            const electron = require('electron');
+            const {ipcRenderer} = electron;
+    
+            $(document).ready(() => { 
+                console.log("Document is ready!!!");
+                // console.log(`Current Directory is: ${__dirname}`);
+                const anchor = document.createElement("a");
+                anchor.className = "list-group-item";
+                anchor.onclick = function () { showItem(this.id); return false; };
+                anchor.href = "#";
+                anchor.id = "myAnchorID";
+                const hdr = document.createElement("h4");
+                hdr.className = "list-group-item-heading";
+                const hdrText = document.createTextNode("This is from doc ready");
+                hdr.appendChild(hdrText);
+                anchor.appendChild(hdr);
+                // const target = $("#targetList");
+                const target = document.getElementById("targetList");
+                target.appendChild(anchor);
+
+                // <a href="#" onclick="showItem('from target list')"class="list-group-item">
+                //             <h4 class="list-group-item-heading">List group item heading</h4>
+                //             <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed
+                //                 diam eget risus varius blandit.</p>
+                //         </a>
+
+            });
+    
+            function showItem(id) {
+                alert("You clicked on: " + id);
+                alert(`Event id is ${event.target.id}`);
+                return false;
+            }
+        </script>
+    </body>
